@@ -1,0 +1,134 @@
+<!DOCTYPE >
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>谢震业</title>
+		<style>
+			#view_box{
+			      	position:relative;
+			      	width:450px;
+			      	height: 680px;
+			      	border-radius: 20px;
+			      	margin:10px auto;
+			      	background-color:#000000;
+			      	background-image:url("res/xzy/xzy1.jpeg");
+			      	background-position:center;
+			      	background-repeat:no-repeat;
+			      	background-size:cover;
+			      }
+				  
+				  .back-icon {
+				  				 width: 60px;
+				  				 height: 60px;
+				       position: absolute;
+				       top: 10px;
+				       left: 10px;
+				       cursor: pointer;
+					   z-index: 9999
+				     }
+		</style>
+		
+		    <script type="text/javascript">
+		      
+		      var index = 1;
+		      
+		      window.onload = function(){
+		        for(var i=1;i<=3;i++){
+		          document.getElementById("li"+i).onclick = function(){
+		            index = this.innerHTML;
+		            setAnimate();
+		          }
+		        }
+		        
+		        document.addEventListener('DOMMouseScroll',mousewheel,false);
+		        window.onmousewheel = mousewheel;
+		      }
+		      
+		      function mousewheel(e){
+		        e.preventDefault();
+		        
+		        if(e.wheelDelta){
+		          if(e.wheelDelta < 0){
+		            index++;
+		          }
+		          else{
+		            index--;
+		          }
+		        }
+		        else if(e.detail){
+		          if(e.detail < 0){
+		            index--;
+		          }
+		          else{
+		            index++;
+		          }
+		        }
+		        setAnimate();
+		      }
+		      
+		      function setAnimate(){
+		        if(index > 3){
+		          index = 3;
+		        }
+		        if(index < 1){
+		          index = 1;
+		        }
+
+
+		        document.getElementById("view_box").style.backgroundImage = "url('res/xzy/xzy"+index+".jpeg')";
+		        
+		        for(var i=1;i<=3;i++){
+		          document.getElementById("li"+i).style.backgroundColor = "#3D3D3D";
+		          document.getElementById("li"+i).style.opacity = 0.5;
+		        }
+		        document.getElementById("li"+index).style.backgroundColor = "#612dfb";
+		        document.getElementById("li"+index).style.opacity = 1;
+		      }
+		      
+		    </script>
+	</head>
+	<link type="text/css" rel="stylesheet" href="css/ydy.css"/>
+	<body>
+		<img class="back-icon" src="res/zy/back1.png" onclick="window.history.back();">
+		<div class="main">
+			 <div id="view_box">
+			       <div class="btn_list">
+			         <ul>
+			           <li id="li1">1</li>
+			           <li id="li2">2</li>
+			           <li id="li3">3</li>
+			          </ul>
+			        </div>
+			     </div>
+			
+			<div class="container1">
+				<div class="container2">
+					<p>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						2010年青奥会男子200米冠军。2014年仁川亚运会田径男子4x100米接力赛，由陈时伟、谢震业、苏炳添和张培萌组成的中国队以37秒99破亚洲纪录的成绩夺冠。2017年天津全运会男子100米、200米冠军。2018年6月20日，法国蒙特勒伊举办的一场田径比赛，谢震业在百米大战中跑出9秒97的成绩。2018年7月15日，在英国伦敦进行的首届田径世界杯，谢震业以20秒25获得男子200米冠军。
+					</p>
+					
+					<p>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						2019年国际田联钻石联赛伦敦站男子200米，谢震业以19秒88的成绩夺冠，打破自己保持的20秒16的全国纪录以及卡塔尔归化选手奥古诺德保持的19秒97的亚洲纪录，成为首位突破20秒大关的黄种人。2019年多哈田径世锦赛，谢震业以20秒03的成绩闯进男子200米决赛，创造了中国短跑历史，成为中国首位进入该项目世锦赛决赛的运动员。
+					</p>
+					
+					<p>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						2021年8月6日，在东京奥运会男子4×100米接力决赛中，汤星强、谢震业、苏炳添、吴智强代表中国队出战，获得铜牌，创造历史最好成绩。9月，在第十四届全运会中，谢震业夺得男子100米和200米亚军、男子4×100米接力冠军。
+					</p>
+					
+					<p>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						2023年8月，入选中国田径队参加杭州第19届亚运会参赛名单。9月30日，以9秒97的成绩获得杭州第19届亚运会田径男子100米金牌。
+					</p>
+					
+					<p>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						2023年12月26日被新华社体育部评为2023年中国十佳运动员。
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

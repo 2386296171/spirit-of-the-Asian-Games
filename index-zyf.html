@@ -1,0 +1,129 @@
+<!DOCTYPE >
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>张雨霏</title>
+		<style>
+			#view_box{
+			      	position:relative;
+			      	width:450px;
+			      	height: 680px;
+			      	border-radius: 20px;
+			      	margin:10px auto;
+			      	background-color:#000000;
+			      	background-image:url("res/zyf/zyf1.jpeg");
+			      	background-position:center;
+			      	background-repeat:no-repeat;
+			      	background-size:cover;
+			      }
+				  
+				  .back-icon {
+				  				 width: 60px;
+				  				 height: 60px;
+				       position: absolute;
+				       top: 10px;
+				       left: 10px;
+				       cursor: pointer;
+					   z-index: 9999
+				     }
+		</style>
+		
+		    <script type="text/javascript">
+		      
+		      var index = 1;
+		      
+		      window.onload = function(){
+		        for(var i=1;i<=3;i++){
+		          document.getElementById("li"+i).onclick = function(){
+		            index = this.innerHTML;
+		            setAnimate();
+		          }
+		        }
+		        
+		        document.addEventListener('DOMMouseScroll',mousewheel,false);
+		        window.onmousewheel = mousewheel;
+		      }
+		      
+		      function mousewheel(e){
+		        e.preventDefault();
+		        
+		        if(e.wheelDelta){
+		          if(e.wheelDelta < 0){
+		            index++;
+		          }
+		          else{
+		            index--;
+		          }
+		        }
+		        else if(e.detail){
+		          if(e.detail < 0){
+		            index--;
+		          }
+		          else{
+		            index++;
+		          }
+		        }
+		        setAnimate();
+		      }
+		      
+		      function setAnimate(){
+		        if(index > 3){
+		          index = 3;
+		        }
+		        if(index < 1){
+		          index = 1;
+		        }
+
+
+		        document.getElementById("view_box").style.backgroundImage = "url('res/zyf/zyf"+index+".jpeg')";
+		        
+		        for(var i=1;i<=3;i++){
+		          document.getElementById("li"+i).style.backgroundColor = "#3D3D3D";
+		          document.getElementById("li"+i).style.opacity = 0.5;
+		        }
+		        document.getElementById("li"+index).style.backgroundColor = "#612dfb";
+		        document.getElementById("li"+index).style.opacity = 1;
+		      }
+		      
+		    </script>
+	</head>
+	<link type="text/css" rel="stylesheet" href="css/ydy.css"/>
+	<body>
+		<img class="back-icon" src="res/zy/back1.png" onclick="window.history.back();">
+		<div class="main">
+			 <div id="view_box">
+			       <div class="btn_list">
+			         <ul>
+			           <li id="li1">1</li>
+			           <li id="li2">2</li>
+			           <li id="li3">3</li>
+			          </ul>
+			        </div>
+			     </div>
+			
+			<div class="container1">
+				<div class="container2">
+					<p>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						2012年11月，张雨霏首次参加短池游泳世界杯北京站就斩获一银一铜。2015年，张雨霏夺得游泳世锦赛女子200米蝶泳获得铜牌，打破女子青年世界纪录。2018年8月，张雨霏获得雅加达亚运会女子100米蝶泳银牌、女子200米蝶泳金牌、男女混合4×100米混合泳金牌，并打破赛会纪录。2019年10月，张雨霏夺得世界军人运动会女子4×100米混合泳接力金牌、女子4×200米自由泳冠军。2021年7月，张雨霏夺得2020年东京奥运会女子100米蝶泳银牌、女子200米蝶泳金牌，并创造了新的奥运会纪录、女子4×200米自由泳接力金牌。
+					</p>
+					
+					<p>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						2023年7月，张雨霏夺得2023年世界游泳锦标赛女子100蝶泳金牌，也是个人世锦赛首金。2023年8月，张雨霏参加第31届世界大学生夏季运动会收获九枚金牌。9月，张雨霏参加杭州第19届亚运会并斩获包括女子200米蝶泳冠军在内的六枚金牌。10月，张雨霏被评为杭州第19届亚运会最具价值运动员。
+					</p>
+					
+					<p>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						2023年12月15日，张雨霏获得2023年全国游泳锦标赛女子50米蝶泳冠军，完成了2023年的最后一场比赛。
+					</p>
+					
+					<p>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						2023年12月26日被新华社体育部评为2023年中国十佳运动员。
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>主页</title>
+		<link type="text/css" rel="stylesheet" href="css/main.css"/>
+		<script src="js/jquery.3.5.1.js"></script>
+		<style>
+			.container_top {
+				display: flex;
+				justify-content: space-between;
+				align-items: flex-start;
+				margin-bottom: 10px;
+			}
+						
+			.container_middle{
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				margin: 20px;
+			}
+			
+			.image {
+			  width: 180px;
+			  height: 180px;
+			  margin: 10px;
+			  background-size: contain;
+			  background-repeat: no-repeat;
+			  background-position: center;
+			}
+			
+			.image_hh {
+				position: absolute;
+				width: 200px;
+				height: 70px;
+				right:10px;
+			}
+			
+			.image_title{
+				width: 55%;
+				height: 250px;
+			}
+			
+			.image_hj {
+				position: absolute;
+				right: 150px;
+				top: 200px;
+				width: 200px;
+				height: 400px;
+			}
+
+			body {
+				background-size: cover;
+				background-repeat: no-repeat;
+				background-position: center;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<ul>
+		  <li><a class="active" href="index.html">主页</a></li>
+		  <li><a href="index-2js1.html">介绍</a></li>
+		  <li><a href="index-3xm.html">项目</a></li>
+		  <li><a href="index-4ydy1.html">运动员</a></li>
+		</ul>
+		
+		<div class="container_top">
+			<div class="image image_title"></div>
+			<div class="image image_hh"></div>
+		</div>
+		
+		<div class="container_middle">
+			<div class="image image_jxw1"></div>
+			<div class="image image_jxw2"></div>
+			<div class="image image_jxw3"></div>
+			<div class="image image_hj"></div>
+		</div>
+				
+		<script>
+					$(document).ready(function(){
+						$("body").css("background-image", "url('res/zy/dlh.jpg')");
+						var images = {
+							"image_jxw1": "res/zy/jxw_chen.png",
+							"image_jxw2": "res/zy/jxw_cong.png",
+							"image_jxw3": "res/zy/jxw_lian.png",
+							"image_hh": "res/zy/hh.png",
+							"image_title": "res/zy/title.png",
+							"image_hj": "res/zy/hj.png",
+						};
+						
+						$.each(images, function(key, value) {
+							$("." + key).css("background-image", "url('" + value + "')");
+						});
+					});
+				</script>
+</body>
+</html>

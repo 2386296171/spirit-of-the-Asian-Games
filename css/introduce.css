@@ -1,0 +1,152 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 14px;
+}
+ul{
+	list-style-type: none;
+}
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif, Arial, 'Microsoft Yahei';
+	/*字体是粗体微软雅黑*/
+}
+
+.card{
+	/* flex布局下元素不按比例缩放 */
+	flex-shrink: 0;
+	flex-grow: 0;
+	position: relative;
+	/*相对定位*/
+	width: 300px;
+	height: 600px;
+	overflow: hidden;
+	margin: 20px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: flex-start;
+	/*起始位置均在上部*/
+	align-items: center;
+	/* flex 子元素 纵向排列 */
+	flex-direction: column;
+	/* 增加个阴影 */
+	box-shadow: 0 0 10px #EEEEE0;
+	/* 同意给字体价格颜色 */
+	color: #e8f6fd;
+	margin-left: 100px;
+}
+
+.photo {
+	position: absolute;
+	/*绝对定位*/
+	/* 默认为放大 */
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	border-radius: 0%;
+	overflow: hidden;
+	transition: 0.5s;
+}
+
+.photo::before {
+	position: absolute;
+	content: '';
+	width: 100%;
+	height: 100%;
+	background-image: linear-gradient(to top, #333, transparent);/*背景线性渐变	*/
+}
+
+.card:hover .photo::before {
+	display: none;
+}
+
+.photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	/*防止图片挤压变形*/
+}
+
+.card:hover .photo {
+	width: 120px;
+	height: 120px;
+	top: 30px;
+	border-radius: 50%;
+	/*圆角*/
+	box-shadow: 0 0 10px #FFF0F5;
+	/*阴影效果*/
+}
+
+h1 {
+	position: absolute;
+	top: 380px;
+	transition: 0.5s;/*过渡时间0.5s*/
+}
+
+.card:hover h1 {
+	position: absolute;
+	top: 170px;
+}
+
+h2 {
+	margin-top: 220px;
+	width: 80%;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #8ea2b8;
+}
+
+p {
+	width: 90%;
+	text-indent: 2em;
+	font-size: 16px;
+	margin-bottom: 10px;
+	line-height: 30px;
+	color: white;
+}
+
+.back {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+a {
+	color: #e8f6fd;
+	background-color: #6e2dfb;
+	text-decoration: none;
+	/*去除下划线*/
+	padding: 12px 36px;
+	border: 1px solid #86a3b3;
+	;
+	border-radius: 8px;
+}
+
+a:hover {
+	color: #Fff;
+	background-color: #962ffe;
+	color: #Fff;
+}
+.daohang{
+	width: 120px;
+	
+	
+}
+.banner{
+}
+.banner li{
+	margin-top: 70px;
+	float: left;
+}
+.banner li a:hover{
+	color: #white;
+}

@@ -1,0 +1,243 @@
+#menu{
+	position: fixed;
+	top: 0;
+	left: 5%;
+	z-index: 999;
+}
+.nav{
+	width: 1500px;
+	height: 
+}
+.nav li{
+	float: left;
+}
+.nav li a{
+	border: 1px solid #962ffe;
+	margin-left: 10px;
+	transition: 0.8s;
+	padding: 6px 20px;
+	margin-left: 10px;
+	font-weight: bolder;
+	color: #962ffe;
+}
+.nav li a:hover{
+	background-color:rgba(255,255,255);
+}
+#menu .active a{
+	background-color:rgba(255,255,255,0.6);
+}
+/* 第一屏幕开始 */
+.section1{
+	background-color: aquamarine;	
+}
+
+
+.section1 div: selection_box{
+	font-size: 48px;
+	color: black;
+}
+
+/* 第一屏幕结束 */
+
+/* 第二屏幕开始 */
+.section2{
+	background-color:rosybrown;
+}
+/* 第二屏幕结束 */
+
+/* 第二屏幕开始 */
+.section3{
+	background-color:goldenrod;
+}
+/* 第二屏幕结束 */
+
+/* 第二屏幕开始 */
+.section4{
+	background-color:cornflowerblue;
+}
+/* 第二屏幕结束 */
+
+/* 第二屏幕开始 */
+.section5{
+	background-color:#1AC9FF;
+}
+/* 第二屏幕结束 */
+
+/* 第二屏幕开始 */
+.section6{
+	background-color:lightcyan;
+}
+/* 第二屏幕结束 */
+
+/* 第二屏幕开始 */
+.section7{
+	background-color:mistyrose;
+}
+/* 第二屏幕结束 */
+
+/* 第二屏幕开始 */
+.section8{
+	background-color:mistyrose;
+}
+/* 第二屏幕结束 */
+
+/* 第二屏幕开始 */
+.section9{
+	background-color:mistyrose;
+}
+/* 第二屏幕结束 */
+
+@font-face {
+ font-family: 'fontnameRegular';
+ src: url('../images/HuaWenXinWei-1.ttf'); 
+} 
+.flFont{
+	font-size:20px;
+	font-family:fontnameRegular
+}
+.selection1_box{
+	background:url(../images/1.png)  no-repeat;
+	background-size:auto 100%;
+	width:100%;
+	height:100%; 
+	text-align:right
+}
+.fontSelection1{
+	font-size:50px;
+	padding-top:25%;
+	padding-right:10%;
+	color:#ac860a
+}
+.section2Fl{ 
+	width:900px;
+	height:400px;	
+	margin:0 auto;
+	background:#f8f8f8;
+	border:10px solid #742dfc;
+	border-radius:10px;
+	position:relative;
+	box-shadow: 10px 14px 20px #742dfc;
+}
+.section2Fl P{
+	padding:40px;
+	line-height:60px;
+	
+}
+.section5Fl{
+	background:#f8f4edcf;
+	border:10px solid #f8f4edcf;width:500px;
+}
+.section5Box{
+	width:1100px;
+	margin:0 auto
+}
+.ku{}
+.ye{
+	position:absolute;
+	right:0px;
+	bottom:10px;
+}
+.photo{
+	width:200px;
+	height:200px;
+	position:absolute;
+	right:100px;
+	top:50px;
+	border:10px solid #962ffe;
+	
+}
+.section2Box{
+	padding:10% 20px; 
+}
+.ul_aihao{
+	width:1200px; 
+	margin:0 auto;
+}
+.ul_aihao li{
+	float:left;
+	width:300px; 
+	margin:20% 50px;
+	font-family:fontnameRegular;
+	color:#b847b0;
+	font-size:30px;
+}
+.ul_aihao li img{
+	width:200px;
+	border:10px solid #fff;
+	transform:rotate(45deg);
+	-ms-transform:rotate(45deg); /* IE 9 */
+	-moz-transform:rotate(45deg); /* Firefox */
+	-webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+	-o-transform:rotate(45deg); /* Opera */
+	
+}
+.section4AdBox{ 
+	padding:200px; 
+}
+.section4AdBoxConn{
+	background:#fff;
+	border-radius:10px;
+	padding:40px;
+	position:relative;
+}
+.section4AdBoxConn li{
+	position:relative;
+	line-height:60px;
+	padding-left:20px;
+}
+
+.section4AdBoxConn li::after{
+	position:absolute;
+	content:'';
+	left:-20px;
+	top:20px;	
+	width:20px;
+	height:20px;
+	border-radius:100%;
+	background:#69d6ea
+}
+.section4Img{
+	position:absolute;
+	right:20px;
+	top:20px;
+}
+
+.slideBox{
+	width:1000px;
+	margin:0 auto;
+	padding:10%;
+}
+.slideBlock{
+	width:500px;
+}
+.slideBlock h2{
+	color:#fff;
+}
+.slideBlock p{
+	color:rgba(255,255,255,0.7)
+}
+.fl{
+	float:left;
+}
+.clear{
+	clear:both
+}
+.sectionP{
+	color:#680604; 
+	font-size:24px;
+}
+.section66Fl{
+	height:550px;
+	border:10px solid #962ffe
+}
+.section66Fl p{
+	font-size:16px; 
+	line-height:40px;
+	padding:0 20px;
+}
+.section66Fl h2{
+	text-align:center
+}
+.section66Fl_P{
+	text-indent:2em
+}

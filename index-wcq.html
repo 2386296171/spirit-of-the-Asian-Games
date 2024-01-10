@@ -1,0 +1,130 @@
+<!DOCTYPE >
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>王楚钦</title>
+		<style>
+			#view_box{
+			      	position:relative;
+			      	width:450px;
+			      	height: 680px;
+			      	border-radius: 20px;
+			      	margin:10px auto;
+			      	background-color:#000000;
+			      	background-image:url("res/wcq/wcq1.jpeg");
+			      	background-position:center;
+			      	background-repeat:no-repeat;
+			      	background-size:cover;
+			      }
+			
+			 .back-icon {
+				 width: 60px;
+				 height: 60px;
+			      position: absolute;
+			      top: 10px;
+			      left: 10px;
+			      cursor: pointer;
+				  z-index: 9999
+			    }
+				
+		</style>
+		
+		    <script type="text/javascript">
+		      
+		      var index = 1;
+		      
+		      window.onload = function(){
+		        for(var i=1;i<=3;i++){
+		          document.getElementById("li"+i).onclick = function(){
+		            index = this.innerHTML;
+		            setAnimate();
+		          }
+		        }
+		        
+		        document.addEventListener('DOMMouseScroll',mousewheel,false);
+		        window.onmousewheel = mousewheel;
+		      }
+		      
+		      function mousewheel(e){
+		        e.preventDefault();
+		        
+		        if(e.wheelDelta){
+		          if(e.wheelDelta < 0){
+		            index++;
+		          }
+		          else{
+		            index--;
+		          }
+		        }
+		        else if(e.detail){
+		          if(e.detail < 0){
+		            index--;
+		          }
+		          else{
+		            index++;
+		          }
+		        }
+		        setAnimate();
+		      }
+		      
+		      function setAnimate(){
+		        if(index > 3){
+		          index = 3;
+		        }
+		        if(index < 1){
+		          index = 1;
+		        }
+
+
+		        document.getElementById("view_box").style.backgroundImage = "url('res/wcq/wcq"+index+".jpeg')";
+		        
+		        for(var i=1;i<=3;i++){
+		          document.getElementById("li"+i).style.backgroundColor = "#3D3D3D";
+		          document.getElementById("li"+i).style.opacity = 0.5;
+		        }
+		        document.getElementById("li"+index).style.backgroundColor = "#612dfb";
+		        document.getElementById("li"+index).style.opacity = 1;
+		      }
+		      
+		    </script>
+	</head>
+	<link type="text/css" rel="stylesheet" href="css/ydy.css"/>
+	<body>
+		<img class="back-icon" src="res/zy/back1.png" onclick="window.history.back();">
+		<div class="main">
+			 <div id="view_box">
+			       <div class="btn_list">
+			         <ul>
+			           <li id="li1">1</li>
+			           <li id="li2">2</li>
+			           <li id="li3">3</li>
+			          </ul>
+			        </div>
+			     </div>
+			
+			<div class="container1">
+				<div class="container2">
+					<p>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						2015年12月，升入中国国家乒乓球队一队。2017年12月3日，搭档薛飞获得2017世界青少年锦标赛男双冠军。2018年7月21日，获得2018年韩国乒乓球公开赛混双亚军。8月28日，王楚钦帮助中国队获得2018年雅加达亚运会乒乓球男团冠军。10月11日，在2018布宜诺斯艾利斯青奥会乒乓球男单决赛以4比1战胜张本智和，获得2018布宜诺斯艾利斯青奥会乒乓球男单冠军。2019年1月8日，国家体育总局授予王楚钦国际级运动健将称号。
+					</p>
+					
+					<p>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						2019年12月9日，在“北京青年榜样·时代楷模”人物评选中获得“青少年体育之星”。2021年7月，入选2020年东京奥运会中国体育代表团乒乓球项目运动员名单。9月，夺得第十四届全运会男双冠军。2021年11月29日，休斯顿世乒赛混双搭档孙颖莎夺得混双金牌。
+					</p>
+					
+					<p>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						2022年1月23日，WTT澳门冠军赛男子单打决赛战胜林高远获得冠军。10月9日，成都第56届世界乒乓球团体锦标赛帮助中国队以3:0战胜德国队夺得冠军。10月23日，WTT澳门冠军赛男子单打决赛战胜樊振东夺冠。10月30日，新乡WTT世界杯男子单打决赛战胜张本智和夺冠。2023年4月，获得2023年WTT冠军赛澳门站男单冠军。9月，获得杭州第19届亚运会乒乓球男子团体、混双、男单、男双冠军。
+					</p>
+					
+					<p>
+						&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+						2023年12月26日被新华社体育部评为2023年中国十佳运动员。
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

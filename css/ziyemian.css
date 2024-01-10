@@ -1,0 +1,156 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	overflow-x: hidden;
+	background-color: black;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.box {
+	width: 1535px;
+}
+.swiper {
+	margin-top: 12px;
+	width: 100%;
+	height: 500px;
+	position: relative;
+	margin-left: 10px;
+}
+
+.swiper-img {
+	position: absolute;
+	top: 0;
+	left: 200px;
+	opacity: 0;
+	transition: all 1.5s;
+}
+
+.swiper-img:nth-child(1) {
+	opacity: 1;
+}
+
+.swiper-left {
+	position: absolute;
+	width: 35px;
+	height: 70px;
+	color: #ccc;
+	top: 195px;
+	border-radius: 0 5px 5px 0;
+	text-align: center;
+	line-height: 70px;
+	font-size: 27px;
+	left: 165px;
+}
+
+.swiper-left:hover {
+	background-color: #00000050;
+	color: #fff;
+	cursor: pointer;
+}
+
+.swiper-right {
+	position: absolute;
+	width: 35px;
+	height: 70px;
+	color: #ccc;
+	top: 195px;
+	border-radius: 0 5px 5px 0;
+	text-align: center;
+	line-height: 70px;
+	font-size: 27px;
+	right: 185px;
+}
+
+.swiper-right:hover {
+	background-color: #00000050;
+	color: #fff;
+	cursor: pointer;
+}
+
+.swiper-zhiding>ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.swiper-zhiding li {
+	width: 25px;
+	height: 25px;
+	border-radius: 100%;
+	background-color: #ccc;
+	float: left;
+	margin-right: 40px;
+}
+
+.swiper-zhiding li:hover {
+	background-color: #fff;
+	cursor: pointer;
+}
+
+.swiper-zhiding {
+	position: absolute;
+	bottom: -50px;
+	right: 700px;
+}
+
+
+.news {
+	border: 1px solid red;
+	width: 1100px;
+	height: 500px;
+	background-color: #ededef;
+	margin-top: 120px;
+	margin-left: 210px;
+}
+
+
+.left-top3 {
+	width: 1100px;
+	height: 35px;
+	border: 1px solid unset;
+	background-color: #962ffe;
+	text-align: center;
+	line-height: 35px;
+	color: white;
+}
+
+.report {
+	position: absolute;
+	width: 1100px;
+	height: 450px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.report1{
+	width: 1050px;
+	margin-top: -40px;
+}
+.report1 li{
+	margin-top: 40px;
+}
+.report a {
+	position: relative;
+	top: 20px;
+	left: 15px;
+	width: 200px;
+	text-decoration: none;
+	color: #000000;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.report a:hover {
+	color: #962ffe;
+}

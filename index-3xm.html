@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>项目</title>
+  <meta charset="UTF-8">
+  <link type="text/css" rel="stylesheet" href="css/main.css"/>
+ <style>
+ 	  .centered-squares {
+ 		  margin-top: 3%;
+ 		  justify-content: center;
+ 		  display: grid;
+ 		  grid-template-columns: repeat(3, 270px);
+ 		  grid-template-rows: repeat(3, 190.75px);
+ 		  gap: 28px;
+ 		}		
+ 	  
+ 	  .content {
+ 	    background-color: #f2f2f2;
+ 	    border: 1px solid #ccc;
+ 		overflow: hidden;
+ 		position: relative;
+ 	  }
+ 	  
+ 	  body {
+ 		  background-image: url("res/zy/dlh.jpg");
+ 		  background-size: cover;
+ 		  background-repeat: ;
+ 		  background-position: center;
+ 	    }
+ 		
+ 		.content img{
+ 			width: 270px;
+ 			height:190.75px;
+ 			cursor: pointer;
+ 			position: absolute;
+ 			transition: all 0.5s ease
+ 			}
+ 			.imgOne{
+ 				bottom: 0px;
+ 				
+ 			}
+ 			.imgTwo{
+ 				bottom:-190.75px;
+ 			}
+ </style>
+  <script src="js/jquery.3.5.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(".content").hover(
+        function() {
+          $(this).find('.imgOne').css('bottom', '190.75px');
+          $(this).find('.imgTwo').css('bottom', '0px');
+        }, function() {
+          $(this).find('.imgOne').css('bottom', '0px');
+          $(this).find('.imgTwo').css('bottom', '-190.75px');
+        }
+      );
+    });
+  </script>
+</head>
+<body>
+	
+	<ul>
+	  <li><a href="index.html">主页</a></li>
+	  <li><a href="index-2js1.html">介绍</a></li>
+	  <li><a class="active" href="index-3xm.html">项目</a></li>
+	  <li><a href="index-4ydy1.html">运动员</a></li>
+	</ul>
+	
+	
+    <div class="centered-squares">
+      <div class="content">
+		  <img class="imgOne" src="res/xm/m_cdzxc2.png">
+		  <img class="imgTwo" src="res/xm/cdzxc.gif">
+	  </div>
+	  <div class="content">
+		  <img class="imgOne" src="res/xm/m_dzjj2.jpg">
+		  <img class="imgTwo" src="res/xm/dzjj.gif">
+	  </div>
+	  <div class="content">
+		  <img class="imgOne" src="res/xm/m_jj2.jpg">
+		  <img class="imgTwo" src="res/xm/jj.gif">
+	  </div>
+	  <div class="content">
+		  <img class="imgOne" src="res/xm/m_jz2.jpg">
+		  <img class="imgTwo" src="res/xm/jz.gif">
+	  </div>
+	  <div class="content">
+		  <img class="imgOne" src="res/xm/m_plw2.jpeg">
+		  <img class="imgTwo" src="res/xm/plw.gif">
+	  </div>
+	  <div class="content">
+		  <img class="imgOne" src="res/xm/m_ppq2.jpg">
+		  <img class="imgTwo" src="res/xm/ppq.gif">
+	  </div>
+	  <div class="content">
+		  <img class="imgOne" src="res/xm/m_tj2.jpg">
+		  <img class="imgTwo" src="res/xm/tj.gif">
+	  </div>
+	  <div class="content">
+		  <img class="imgOne" src="res/xm/m_ymq2.jpg">
+		  <img class="imgTwo" src="res/xm/ymq.gif">
+	  </div>
+      <div class="content">
+		  <img class="imgOne" src="res/xm/m_yy2.jpg">
+		  <img class="imgTwo" src="res/xm/yy.gif">
+	  </div>
+    </div>
+
+</body>
+</html>
